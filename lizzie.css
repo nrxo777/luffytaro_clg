@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: whitesmoke;
+    background-color: #212121;
+}
+
+/* ---------- Navbar ---------- */
+
+nav{
+    background-color: #A94A4A;
+    color: #FFF6DA;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+nav h1{
+    margin: 0;
+    padding-left: 20px;
+    font-size: 1.8rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    padding-right: 20px;
+}
+
+nav ul li{
+    margin: 0 15px;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFF6DA;
+    font-weight: 600;
+}
+
+
+/* ---------- Hero ---------- */
+
+header {
+    background-color: #FFF6DA;
+    color: #A94A4A;
+    margin-top: 70px;
+    padding: 100px 20px;
+}
+
+.hero h2{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.exp-btn {
+    text-decoration: none;
+    background-color: #F4D793;
+    color: #212121;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-top: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.exp-btn:hover {
+    background-color: #A94A4A;
+    color: #FFF6DA;
+}
+
+
+/* ---------- Section ---------- */
+
+section {
+    padding: 50px 20px;
+    background-color: #F4D793;
+    color: #212121;
+}
+
+h3 {
+    color: #A94A4A;
+}
+
+/* ---------- Card Container ---------- */
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card{
+    background: #FFF6DA;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);   
+    transition: transform 0.3s ease;
+
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* ---------- Contact Form ---------- */
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    min-width: 400px;
+    margin: auto;
+}
+
+input, textarea{
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    border: 2px solid #212121;
+    background-color: #FFF6DA;
+}
+
+button {
+    text-decoration: none;
+    background-color: #FFF6DA;
+    color: #212121;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #A94A4A;
+    color: #FFF6DA;
+}
