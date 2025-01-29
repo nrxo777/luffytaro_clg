@@ -1,16 +1,38 @@
+:root {
+    --bg-color: #212121;
+    --text-color: whitesmoke;
+    --nav-bg: #6D2323;
+    --nav-text: #FFF6DA;
+    --card-bg: #FFF6DA;
+    --card-text: #212121;
+    --section-bg: #F4D793;
+}
+
+.light-mode {
+    --bg-color: #181C14;
+    --text-color: #ECDFCC;
+    --nav-bg: #3e3f3c;
+    --nav-text: #ECDFCC;
+    --card-bg: #697565;
+    --card-text: #ECDFCC;
+    --section-bg: #413d34;
+}
+
+
 body {
     margin: 0;
     padding: 0;
     text-align: center;
-    color: whitesmoke;
-    background-color: #212121;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: 0.3s;
 }
 
 /* ---------- Navbar ---------- */
 
 nav{
-    background-color: #A94A4A;
-    color: #FFF6DA;
+    background-color: var(--nav-bg);
+    color: var(--nav-text);
     padding: 15px;
     display: flex;
     justify-content: space-between;
@@ -40,16 +62,26 @@ nav ul li{
 
 nav ul li a {
     text-decoration: none;
-    color: #FFF6DA;
+    color: var(--nav-text);
     font-weight: 600;
+}
+
+#theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0;
+    padding-right: 20px;
+    margin: 0 15px;
 }
 
 
 /* ---------- Hero ---------- */
 
 header {
-    background-color: #FFF6DA;
-    color: #A94A4A;
+    background-color: var(--card-bg);
+    color: var(--card-text);
     margin-top: 70px;
     padding: 100px 20px;
 }
@@ -71,7 +103,7 @@ header {
 }
 
 .exp-btn:hover {
-    background-color: #A94A4A;
+    background-color: card-text;
     color: #FFF6DA;
 }
 
@@ -80,12 +112,12 @@ header {
 
 section {
     padding: 50px 20px;
-    background-color: #F4D793;
-    color: #212121;
+    background-color: var(--section-bg);
+    color: var(--card-text);
 }
 
 h3 {
-    color: #A94A4A;
+    color: --card-text;
 }
 
 /* ---------- Card Container ---------- */
@@ -99,7 +131,8 @@ h3 {
 }
 
 .card{
-    background: #FFF6DA;
+    background: var(--card-bg);
+    color: var(--card-text);
     padding: 20px;
     border-radius: 10px;
     font-weight: 600;
@@ -132,8 +165,8 @@ input, textarea{
 
 button {
     text-decoration: none;
-    background-color: #FFF6DA;
-    color: #212121;
+    background-color: var(--card-bg);
+    color: var(--card-text);
     padding: 10px 20px;
     border-radius: 5px;
     margin-top: 15px;
@@ -142,6 +175,7 @@ button {
 }
 
 button:hover {
-    background-color: #A94A4A;
-    color: #FFF6DA;
+    background-color: var(--nav-bg);
+    color: var(--nav-text);
 }
+
